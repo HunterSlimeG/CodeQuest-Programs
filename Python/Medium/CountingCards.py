@@ -24,21 +24,21 @@ for caseNum in range(cases):
             int(value)
             computerValue += int(value)
         except ValueError:
-            if value=="KING" or value=="QUEEN" or value=="JACK":
+            if value in ["KING", "QUEEN", "JACK"]:
                 computerValue += 10
-            elif value=="ACE":
+            elif value == "ACE":
                 if computerValue >= 11:
                     computerValue += 1
                 else:
                     computerValue += 11
-    if playerValue>21 and computerValue<21:
+    if playerValue > 21:
         status = "Dealer Wins"
-    elif computerValue>21 and playerValue<21:
+    elif computerValue > 21 and playerValue <= 21:
         status = "Player Wins"
-    elif (21-playerValue)<(21-computerValue):
+    elif (21 - playerValue) < (21 - computerValue):
         status = "Player Wins"
-    elif (21-playerValue)>(21-computerValue):
+    elif (21 - playerValue) > (21 - computerValue):
         status = "Dealer Wins"
-    elif (21-playerValue)==(21-computerValue):
+    elif (21 - playerValue) == (21 - computerValue):
         status = "Tie"
     print(f"Player Score: {playerValue} Dealer Score: {computerValue} {status}!")

@@ -16,7 +16,7 @@ for caseNum in range(cases):
         seg = sys.stdin.readline().rstrip().split(" ")
         len = int(seg[1])
 
-        empg = mpg[cyl][seg[0]] - (0.25 * (mGas-cGas))
+        empg = mpg[cyl][seg[0]] - (0.25 * (mGas - cGas))
         cGas -= len/empg
     
     if cGas>=0:
