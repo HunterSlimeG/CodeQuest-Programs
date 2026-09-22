@@ -1,18 +1,27 @@
 import sys
 cases = int(sys.stdin.readline().rstrip())
 for caseNum in range(cases):
-    charDict: dict = {}
+    charDict = {}
     line = sys.stdin.readline().rstrip()
-    charDict[" "] = 0
-    for char in line:
-        if char in charDict.keys():
-            charDict[char] += 1
+    words = line.split(" ")
+    for l in line:
+        if l in charDict.keys():
+            charDict[l] += 1
         else:
-            charDict[char] = 1
+            charDict[l] = 1
     print(line)
-    print("-"*len(line))
+    hy = ""
+    for h in range(len(line)):
+        hy += "-"
+    print(hy)
     print(f"CHARACTERS: {sum(charDict.values())}")
-    print(f"WORDS: {charDict[" "]+1}")
-    for k in charDict.keys():
-        print(f"{k}: {charDict[k]}")
-    
+    print(f"WORDS: {len(words)}")
+    newDict = {}
+    while bool(charDict):
+        highest = ""
+        for c,v in charDict.items():
+            if highest=="" or charDict[c]>charDict[highest]:
+                highest = c
+        newDict[highest] = charDict.pop(highest)
+    for c,v in newDict.items():
+        print(f"{c}: {v}")
