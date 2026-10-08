@@ -1,7 +1,7 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    playerCards = sys.stdin.readline().rstrip().split(" ")
+    playerCards = input().split(" ")
     playerValue = 0
     for p in playerCards:
         value = p[:p.find("_")]
@@ -16,7 +16,7 @@ for caseNum in range(cases):
                     playerValue += 1
                 else:
                     playerValue += 11
-    computerCards = sys.stdin.readline().rstrip().split(" ")
+    computerCards = input().split(" ")
     computerValue = 0
     for c in computerCards:
         value = c[:c.find("_")]

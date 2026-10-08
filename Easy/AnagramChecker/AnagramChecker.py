@@ -1,9 +1,9 @@
-import sys
+
 yes = " = ANAGRAM"
 no = " = NOT AN ANAGRAM"
-cases = int(sys.stdin.readline().rstrip())
+cases = int(input())
 for caseNum in range(cases):
-    line = sys.stdin.readline().rstrip()
+    line = input()
     words = line.split("|")
     if words[0]==words[1]:
         print(line+no)

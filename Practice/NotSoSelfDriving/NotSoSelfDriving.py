@@ -1,7 +1,7 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    inps = sys.stdin.readline().rstrip().split(":")
+    inps = input().split(":")
     speed = float(inps[0])
     dist = float(inps[1])
     if speed>0:

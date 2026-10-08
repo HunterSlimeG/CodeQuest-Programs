@@ -1,7 +1,7 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    name, bats = sys.stdin.readline().rstrip().split(":")
+    name, bats = input().split(":")
     bats = bats.split(",")
     batNum = len([b for b in bats if b != "BB"])
 

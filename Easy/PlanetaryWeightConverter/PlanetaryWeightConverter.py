@@ -1,5 +1,5 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
     planets = {
         "Mercury": 0.377,
@@ -11,7 +11,7 @@ for caseNum in range(cases):
         "Uranus": 0.886,
         "Neptune": 1.137,
     }
-    weight = int(sys.stdin.readline().rstrip())
+    weight = int(input())
 
     for p, m in planets.items():
         mass = round((weight*m)+.00001, 1)

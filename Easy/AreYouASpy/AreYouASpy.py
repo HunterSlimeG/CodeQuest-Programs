@@ -1,7 +1,7 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    greet, respond = sys.stdin.readline().rstrip().split("|")
+    greet, respond = input().split("|")
 
     spy = True
     for r in respond:

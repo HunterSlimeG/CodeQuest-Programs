@@ -1,15 +1,15 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    dct, wrds = sys.stdin.readline().rstrip()
+    dct, wrds = input()
 
     diction = []
     for d in range(dct):
-        diction.append(sys.stdin.readline().rstrip())
+        diction.append(input())
 
     words = []
     for w in range(wrds):
-        wrd = sys.stdin.readline().rstrip()
+        wrd = input()
         for d in diction:
             for l in wrd:
                 pass

@@ -1,7 +1,7 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    line = sys.stdin.readline().rstrip()
+    line = input()
     binLine = ""
     text = ""
     for i in range(len(line)):

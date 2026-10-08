@@ -1,7 +1,7 @@
-import sys, math
-cases = int(sys.stdin.readline().rstrip())
+import math
+cases = int(input())
 for caseNum in range(cases):
-    ang1, dist1, ang2, dist2 = [int(i) for i in sys.stdin.readline().rstrip().split(" ")]
+    ang1, dist1, ang2, dist2 = [int(i) for i in input().split(" ")]
 
     x1 = math.sin(math.radians(ang1)) * dist1
     y1 = math.cos(math.radians(ang1)) * dist1

@@ -1,7 +1,7 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    nums = [int(i) for i in sys.stdin.readline().rstrip().split(",")]
+    nums = [int(i) for i in input().split(",")]
     nums.sort()
     nums = [str(i) for i in nums]
     print(",".join(nums))

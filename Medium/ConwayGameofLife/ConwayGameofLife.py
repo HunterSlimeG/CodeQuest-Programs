@@ -1,11 +1,11 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    gens = int(sys.stdin.readline().rstrip())
+    gens = int(input())
     board: list[list] = []
 
     for i in range(10):
-        board.append(sys.stdin.readline().rstrip())
+        board.append(input())
 
     for g in range(gens):
         for y, row in enumerate(board):

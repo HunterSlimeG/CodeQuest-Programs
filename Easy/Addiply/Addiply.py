@@ -1,5 +1,5 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    val1, val2 = sys.stdin.readline().rstrip().split(" ")
+    val1, val2 = input().split(" ")
     print(int(val1)+int(val2), int(val1)*int(val2))

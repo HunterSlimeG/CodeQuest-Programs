@@ -1,12 +1,12 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    line = [int(i) for i in sys.stdin.readline().rstrip().split(" ")]
+    line = [int(i) for i in input().split(" ")]
     missions = line[0]
     raptor = line[1:5]
     raider = line[5:]
     for m in range(missions):
-        mission = [int(i) for i in sys.stdin.readline().rstrip().split(" ")]
+        mission = [int(i) for i in input().split(" ")]
         if (not raptor[2] > mission[1]) and raider[2] > mission[1]:
             print("Sikorsky Raider")
         elif (not raider[2] > mission[1]) and raptor[2] > mission[1]:

@@ -1,4 +1,4 @@
-import sys
+
 class Node:
     name: str
     parent = None
@@ -22,9 +22,9 @@ def getNames(pre, root):
         getNames(pre+"-", i)
 
 
-cases = int(sys.stdin.readline().rstrip())
+cases = int(input())
 root = Node("None", None, [])
 for caseNum in range(cases):
-    term, base = sys.stdin.readline().rstrip().split(",")
+    term, base = input().split(",")
     insert(root, term, base)
 getNames("", root)

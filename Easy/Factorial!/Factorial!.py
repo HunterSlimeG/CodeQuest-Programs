@@ -1,4 +1,4 @@
-import sys
+
 
 def factorial(val, sum=1):
     sum *= val
@@ -7,6 +7,6 @@ def factorial(val, sum=1):
     else:
         return sum
 
-cases = int(sys.stdin.readline().rstrip())
+cases = int(input())
 for caseNum in range(cases):
-    print(factorial(int(sys.stdin.readline().rstrip())))
+    print(factorial(int(input())))

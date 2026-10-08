@@ -1,7 +1,7 @@
-import sys, math
-cases = int(sys.stdin.readline().rstrip())
+import math
+cases = int(input())
 for caseNum in range(cases):
-    alt = int(sys.stdin.readline().rstrip())
+    alt = int(input())
 
     d = (40075 / math.pi) + alt * 2
     cir = d * math.pi

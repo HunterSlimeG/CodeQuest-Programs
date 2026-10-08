@@ -1,7 +1,7 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    val = int(sys.stdin.readline().rstrip())
+    val = int(input())
     fibb = [0, 1]
     while fibb[-1] < val:
         fibb.append(fibb[-1] + fibb[-2])

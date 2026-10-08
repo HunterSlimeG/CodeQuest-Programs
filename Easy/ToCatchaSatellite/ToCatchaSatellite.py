@@ -1,10 +1,10 @@
-import sys, math
-cases = int(sys.stdin.readline().rstrip())
+import math
+cases = int(input())
 grav = 0.00000000006673
 mass = 5980000000000000000000000
 rad_earth = 6370000
 for caseNum in range(cases):
-    alt = int(sys.stdin.readline().rstrip())
+    alt = int(input())
     rad = rad_earth + alt
     vel = math.sqrt((grav * mass) / rad)
     time = round(math.sqrt((4 * math.pow(math.pi, 2) * math.pow(rad, 3)) / (grav * mass)))

@@ -1,7 +1,7 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    year = int(sys.stdin.readline().rstrip())
+    year = int(input())
     aspect = "Yang" if year%2==0 else "Yin"
     elements = ["Wood", "Fire", "Earth", "Metal", "Water"]
     element = elements[((year-4)%10)//2]

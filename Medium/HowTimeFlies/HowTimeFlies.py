@@ -1,10 +1,10 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 units = ["SECONDS", "MINUTES", "HOURS", "DAYS"]
 convUp = [(1/60), (1/60), (1/24), 1]
 convDn = [1, 60, 60, 24]
 for caseNum in range(cases):
-    line = sys.stdin.readline().rstrip().split(" ")
+    line = input().split(" ")
     num, unit1, unit2 = line
     oldNum = line[0]
     oldUnit = line[1]

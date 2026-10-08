@@ -1,12 +1,12 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 mixes = {
     "violet":["blue", "red"],
     "orange":["red", "yellow"],
     "green":["blue", "yellow"],
 }
 for caseNum in range(cases):
-    color = sys.stdin.readline().rstrip()
+    color = input()
     printed = False
     for k in mixes.keys():
         if k in color:

@@ -1,7 +1,7 @@
-import sys, math
-cases = int(sys.stdin.readline().rstrip())
+import math
+cases = int(input())
 for caseNum in range(cases):
-    y = int(sys.stdin.readline().rstrip())
+    y = int(input())
     a = y % 19
     b = y % 4
     c = y % 7

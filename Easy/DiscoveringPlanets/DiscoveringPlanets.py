@@ -1,7 +1,7 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    temp, wtr, mag, orb = sys.stdin.readline().rstrip().split(" ")
+    temp, wtr, mag, orb = input().split(" ")
     temp = float(temp)
     wtr = True if wtr == "true" else False
     mag = True if mag == "true" else False

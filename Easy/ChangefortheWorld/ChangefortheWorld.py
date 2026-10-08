@@ -1,7 +1,7 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    money = sys.stdin.readline().rstrip()
+    money = input()
     cash = float(money.replace("$", ""))
 
     quarters = 0

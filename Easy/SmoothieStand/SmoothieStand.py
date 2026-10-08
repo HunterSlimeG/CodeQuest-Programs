@@ -1,5 +1,5 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 smoothies = {
     "strawberry swirl": ["strawberry", "blueberry"],
     "banana burst": ["banana", "kiwi", "orange"],
@@ -7,8 +7,8 @@ smoothies = {
     "mango medley": ["mango", "strawberry", "blueberry", "banana"],
 }
 for caseNum in range(cases):
-    ing = sys.stdin.readline().rstrip().split("|")
-    smooth = sys.stdin.readline().rstrip()
+    ing = input().split("|")
+    smooth = input()
 
     can = True
     for i in smoothies[smooth]:

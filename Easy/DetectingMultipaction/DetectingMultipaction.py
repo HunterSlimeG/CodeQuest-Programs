@@ -1,8 +1,8 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    list1 = [float(i) for i in sys.stdin.readline().rstrip().split(" ")]
-    list2 = [float(i) for i in sys.stdin.readline().rstrip().split(" ")]
+    list1 = [float(i) for i in input().split(" ")]
+    list2 = [float(i) for i in input().split(" ")]
     vals = []
     for n in range(len(list1)):
         if list1[n] >= .6 and list1[n] <= .85 and list2[n] >= .6 and list2[n] <= .85:

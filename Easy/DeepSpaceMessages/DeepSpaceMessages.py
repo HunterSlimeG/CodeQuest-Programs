@@ -1,8 +1,8 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 alpha = "abcdefghijklmnopqrstuvwxyz"
 for caseNum in range(cases):
-    line = sys.stdin.readline().rstrip()
+    line = input()
     message = ""
     i = 0
     while i < len(line):

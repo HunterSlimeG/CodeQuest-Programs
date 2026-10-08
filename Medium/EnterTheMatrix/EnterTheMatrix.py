@@ -1,8 +1,8 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    C = [[int(i) for i in sys.stdin.readline().rstrip().split(" ")], [int(i) for i in sys.stdin.readline().rstrip().split(" ")]]
-    F = [int(i) for i in sys.stdin.readline().rstrip().split(" ")]
+    C = [[int(i) for i in input().split(" ")], [int(i) for i in input().split(" ")]]
+    F = [int(i) for i in input().split(" ")]
 
     discrimnant = (C[0][0] * C[1][1]) - (C[0][1] * C[1][0])
     invC = [[C[1][1]/discrimnant, -C[0][1]/discrimnant], 

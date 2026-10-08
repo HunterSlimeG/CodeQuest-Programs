@@ -1,7 +1,7 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    line = sys.stdin.readline().rstrip().replace('"', '').replace(" ", "")
+    line = input().replace('"', '').replace(" ", "")
     
     if len(line)==0:
         print("No Letter Found")

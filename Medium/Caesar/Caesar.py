@@ -1,9 +1,9 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 alph = "abcdefghijklmnopqrstuvwxyz"
 for caseNum in range(cases):
-    shift = int(sys.stdin.readline().rstrip())
-    words = sys.stdin.readline().rstrip().split(" ")
+    shift = int(input())
+    words = input().split(" ")
     newWords = []
     for w in words:
         new = ""

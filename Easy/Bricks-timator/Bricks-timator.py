@@ -1,9 +1,9 @@
-import sys, math
-cases = int(sys.stdin.readline().rstrip())
+import math
+cases = int(input())
 for caseNum in range(cases):
     total = 0
 
-    inputs = sys.stdin.readline().rstrip().split(" ")
+    inputs = input().split(" ")
     dims = [int(i) for i in inputs[0].split("x")]
     height = int(inputs[1]) 
 

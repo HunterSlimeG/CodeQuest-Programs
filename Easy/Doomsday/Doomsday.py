@@ -1,7 +1,7 @@
-import sys, math
-cases = int(sys.stdin.readline().rstrip())
+import math
+cases = int(input())
 for caseNum in range(cases):
-    total = int(sys.stdin.readline().rstrip())
+    total = int(input())
     sizes = []
 
     while total>0:

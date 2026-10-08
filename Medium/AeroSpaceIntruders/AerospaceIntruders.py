@@ -1,12 +1,12 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
     speed = {"A":10, "B":20, "C":30}
     ships: dict[str, list] = {}
     targets = {}
-    sh = int(sys.stdin.readline().rstrip())
+    sh = int(input())
     for s in range(sh):
-        ship = sys.stdin.readline().rstrip()
+        ship = input()
         ships[ship.split("_")[0]] = [ship.split("_")[1][:1], int(ship.split(":")[1].split(",")[0]), int(ship.split(":")[1].split(",")[1])]
     for i in range(len(ships)):
         closest = ""

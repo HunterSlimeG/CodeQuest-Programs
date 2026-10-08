@@ -1,7 +1,7 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    words = sys.stdin.readline().rstrip().replace("-", " ").split(" ")
+    words = input().replace("-", " ").split(" ")
     tla = ""
 
     for w in words:

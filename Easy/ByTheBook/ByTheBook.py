@@ -1,7 +1,7 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    num = sys.stdin.readline().rstrip()
+    num = input()
     sum = 0
     for n in range(len(num)-1):
         sum += int(num[n])*(10-n)

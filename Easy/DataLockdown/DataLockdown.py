@@ -1,10 +1,10 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    links = int(sys.stdin.readline().rstrip())
+    links = int(input())
     review = []
     for link in range(links):
-        line = sys.stdin.readline().rstrip().split(" ")
+        line = input().split(" ")
         url = line[0]
         size = int(line[1])
 

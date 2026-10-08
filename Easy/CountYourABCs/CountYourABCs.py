@@ -1,8 +1,8 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
     charDict = {}
-    line = sys.stdin.readline().rstrip().replace(" ", "")
+    line = input().replace(" ", "")
     for l in line:
         if l in charDict.keys():
             charDict[l] += 1

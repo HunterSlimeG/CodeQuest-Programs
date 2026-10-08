@@ -1,7 +1,7 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    val = int(sys.stdin.readline().rstrip())
+    val = int(input())
     start = val
     count = 1
     while val > 1:

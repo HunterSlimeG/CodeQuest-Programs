@@ -1,10 +1,10 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
     alph = dict.fromkeys("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 0)
-    lines = int(sys.stdin.readline().rstrip())
+    lines = int(input())
     for i in range(lines):
-        line = sys.stdin.readline().rstrip().upper()
+        line = input().upper()
         for l in line:
             if l in alph.keys():
                 alph[l] += 1

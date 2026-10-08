@@ -1,8 +1,8 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    max = int(sys.stdin.readline().rstrip())
-    delay = sum([int(i) for i in sys.stdin.readline().rstrip().split(" ")])
+    max = int(input())
+    delay = sum([int(i) for i in input().split(" ")])
 
     if delay>max:
         print(delay-max)

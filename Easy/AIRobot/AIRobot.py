@@ -1,7 +1,7 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    list = sys.stdin.readline().rstrip().split(" ")
+    list = input().split(" ")
     dirs = "NWSE"
     x = int(list[0])
     y = int(list[1])

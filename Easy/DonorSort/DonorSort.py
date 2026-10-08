@@ -1,8 +1,8 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    list1 = sys.stdin.readline().rstrip().split(",")
-    list2 = sys.stdin.readline().rstrip().split(",")
+    list1 = input().split(",")
+    list2 = input().split(",")
     group1 = []
     group2 = []
     group3 = []

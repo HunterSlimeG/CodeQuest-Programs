@@ -1,11 +1,11 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
     cards = []
-    for c in range(int(sys.stdin.readline().rstrip())):
-        cards.append(sys.stdin.readline().rstrip())
+    for c in range(int(input())):
+        cards.append(input())
     
-    card = sys.stdin.readline().rstrip()
+    card = input()
     count = 0
     for i in cards:
         if i==card:

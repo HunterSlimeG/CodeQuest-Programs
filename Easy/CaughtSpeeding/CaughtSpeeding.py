@@ -1,7 +1,7 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    spd, birth = sys.stdin.readline().rstrip().split(" ")
+    spd, birth = input().split(" ")
     spd = int(spd)
     if birth == "true":
         if spd <= 65:

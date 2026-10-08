@@ -1,8 +1,8 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 for caseNum in range(cases):
-    numChars = int(sys.stdin.readline().rstrip())
-    msg = sys.stdin.readline().rstrip()
+    numChars = int(input())
+    msg = input()
     j = 0
     while j<numChars:
         token = msg[j:j+3]

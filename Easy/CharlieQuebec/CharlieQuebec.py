@@ -1,5 +1,5 @@
-import sys
-cases = int(sys.stdin.readline().rstrip())
+
+cases = int(input())
 alpha = {
     "A": "Alpha",
     "B": "Bravo",
@@ -29,10 +29,10 @@ alpha = {
     "Z": "Zulu",
 }
 for caseNum in range(cases):
-    words = int(sys.stdin.readline().rstrip())
+    words = int(input())
     icaoStrings = []
     for w in range(words):
-        baseword = sys.stdin.readline().rstrip()
+        baseword = input()
         newword = ""
         for i, l in enumerate(baseword):
             if l.upper() in alpha.keys():
