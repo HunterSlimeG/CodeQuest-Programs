@@ -17,6 +17,8 @@ for caseNum in range(cases):
                         words[d] += 1
                 else:
                     words[d] += 2
+            if len(wrd) == len(d):
+                words[d] -= 1
 
         sortedwords = dict(sorted(words.items(), key=lambda item: item[1]))
         print(sortedwords)
